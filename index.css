@@ -10,70 +10,86 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    background-color:aliceblue;
+    height: 100vh;
+    outline: 1px solid red;
+    margin: 0;
     
 }
 
 .container {
 
-    width: 375px;
+    width: 100%;
     background-color: white;
     box-shadow: 0em 0.5em 0.5em rgba(0, 0, 0, 0.118);    
-    height: 730px;
+    height: 100%;
     
 
 }
 
 .card__top {
 
-    height: 32%;
+    height: 30%;
     position: relative;
     background-image: url("./images/bg-main-mobile.png");
     color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    
     
 }
 
+
+
+
 .card__white {
 
-
-    position: absolute;
-    width: 280px;
-    height: 160px;
-    z-index: 25;
-    left: 80px;
+    right: 120px;
+    position: relative;
+    height: 180px;
     top: 30px;
-    border-radius: 7px;
+    min-width: 320px;
+    z-index: 25;
+    border-radius: 10px;
     background-image: url("./images/bg-card-back.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 
 .card__purple {
-
-    position: absolute;
-    width: 280px;
-    height: 160px;
-    top: 120px;
-    left: 15px;
-    border-radius: 7px;
+    position: relative;
+    min-width: 320px;
+    top: 150px;
+    left: 120px;
+    height: 180px;
+    border-radius: 10px;
     z-index: 50;
     background-image: url("./images/bg-card-front.png");
     background-position:right;
     background-repeat: no-repeat;
+    
     
 }
 
 .card__info {
 
 margin: 20px;
+height: 80%;
+
+display: flex;
+flex-direction: column;
+justify-content:space-between ;
 
 }
 
 .child {
 
+
+    
 
     display: flex;
     justify-content: space-between;
@@ -84,6 +100,8 @@ margin: 20px;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    
+    
     
 
 }
@@ -110,11 +128,7 @@ margin: 20px;
 
 .card__details {
 
- 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-self: center;
+    
     
     
     
@@ -188,21 +202,23 @@ margin: 20px;
    
 form {
 
-    padding: 25px;
+    padding-bottom: 30px;
+    
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     
+    width: 360px;
+    
 }
 
 .card__container {
-
-    height: 68%;
-    
+    height: 70%;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
+    
 }
 
 
