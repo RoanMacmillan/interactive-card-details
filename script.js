@@ -23,12 +23,13 @@ confirmButton.addEventListener("click", (event) => {
 
     event.preventDefault();
 
-    // Checks if name is not blank
+    // Checks if name is not blank 
 
     if (nameInput.value === '') {
 
         nameError.innerHTML = "Can't be blank";
         nameError.style.display = "block";
+        nameInput.style.borderColor = "red";
 
     } else {
 
@@ -41,11 +42,14 @@ confirmButton.addEventListener("click", (event) => {
 
         cvcError.innerHTML = "Can't be blank";
         cvcError.style.display = "block";
+        cvcInput.style.borderColor = "red";
 
     } else if (cvcInput.value.length < 3 || isNaN(cvcInput.value)) {
 
         cvcError.innerHTML = "Invalid CVC";
         cvcError.style.display = "block";
+        cvcInput.style.borderColor = "red";
+
 
     } else {
 
@@ -59,11 +63,15 @@ confirmButton.addEventListener("click", (event) => {
 
         expError.innerHTML = "Can't be blank";
         expError.style.display = "block";
+        mmInput.style.borderColor = "red";
+        yyInput.style.borderColor = "red";
 
     } else if (mmInput.value.length < 2 || yyInput.value.length < 2 || mmInput.value === 0 || mmInput < 01 || mmInput.value > 12 || yyInput.value < 22 || isNaN(mmInput.value) || isNaN(yyInput.value)) {
 
         expError.innerHTML = "Invalid Expiry Date";
         expError.style.display = "block";
+        yyInput.style.borderColor = "red";
+        mmInput.style.borderColor = "red";
 
     }
 
@@ -80,12 +88,15 @@ confirmButton.addEventListener("click", (event) => {
 
             cardError.innerHTML = "Can't be blank or less than 16 digits";
             cardError.style.display = "block";
+            cardInput.style.borderColor = "red";
 
         } else if (isNaN(cardInput.value)) {
 
 
             cardError.innerHTML = "Wrong format, numbers only";
             cardError.style.display = "block";
+            cardInput.style.borderColor = "red";
+
 
         } else {
 
