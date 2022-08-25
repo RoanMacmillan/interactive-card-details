@@ -11,7 +11,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    outline: 1px solid red;
     margin: 0;
     
 }
@@ -437,19 +436,44 @@ input[type=text] {
   @media screen and (max-width: 375px) {
 
 
-    .container {
+    .card__purple {
 
-        width: 375px;
+        
+        height: 150px;
+        min-width: 270px;
+        top: 120px;
+        left: 105px;
 
     }
+    
+    .card__white {
+
+       right: 105px;
+        min-width: 270px;
+        height: 150px;
+        top: 35px;
+    }
+
 
     form {
 
-        width: 2750px;
+        width: 320px;
+    }
+
+    .card__checkout {
+
+        width: 320px;
     }
 
     .card__top {
 
+        height: 35%;
+
+    }
+
+    .card__container {
+
+        height: 65%;
     }
 
 
