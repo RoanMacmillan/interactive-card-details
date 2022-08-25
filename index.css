@@ -445,7 +445,12 @@ input[type=text] {
 
     form {
 
-        width: 300px;
+        width: 2750px;
+    }
+
+    .card__top {
+
+        width: 100%;
     }
 
 
