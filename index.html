@@ -30,12 +30,12 @@
           </div>
           <div class="card__details">
             <div class="child">
-              <span id="cred-number">0000 0000 0000 0000</span>
+              <span id="cred-number">1234 5678 9123 1111</span>
             </div>
 
             <div id="child-span" class="child">
-              <span>Jane Appleseed</span>
-              <span>00/00</span>
+              <span id="card-name">Jane Appleseed</span>
+              <span><span id="mm-num">00</span>/<span id="yy-num">00</span></span>
             </div>
           </div>
 
@@ -50,7 +50,16 @@
 
     <div class="card__container">
 
-    <form name="myForm">
+      <div id="second-state" class="card__checkout">
+        <img id="complete" src="./images/icon-complete.svg">
+        <h1 id="ty">Thank you!</h1>
+        <span id="added">We've added your card details</span>
+        <button id="btn2" class="btn">Continue</button>
+    
+      </div>
+
+
+    <form  id="myform" name="myForm">
       <label for="fname">Cardholder Name</label>
       <input type="text" id="fname" name="firstname" placeholder="e.g. Jane Appleseed">
       <span id="name-error" class="form-span"></span>
@@ -81,21 +90,17 @@
         </div>
 
         <div id="btn1" class="col-100">
-          <input type="submit" value="Confirm" class="btn">
+          <input type="button" value="Confirm" class="btn">
         </div>
+
+        
 
       </div>
 
-
+      
   </form>
 
-  <div class="card__checkout">
-    <img id="complete" src="./images/icon-complete.svg">
-    <h1 id="ty">Thank you!</h1>
-    <span id="added">We've added your card details</span>
-    <button id="btn2" class="btn">Continue</button>
-
-  </div>
+  
 
 
 </div>
