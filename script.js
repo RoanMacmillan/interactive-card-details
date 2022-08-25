@@ -174,7 +174,7 @@ function validateForm() {
 
     let formErrors = errorName + errorNum + errorMM + errorYY + errorCVC;
 
-    if (formErrors === 0) {
+    if (formErrors != 0) {
 
         submitForm();
     }
