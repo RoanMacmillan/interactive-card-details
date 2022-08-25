@@ -432,3 +432,21 @@ input[type=text] {
         }
 
   }
+
+
+  @media screen and (max-width: 375px) {
+
+
+    .container {
+
+        width: 375px;
+
+    }
+
+    form {
+
+        width: 300px;
+    }
+
+
+  }
